@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Fondo Circular / Adaptativo -->
+    <path
+        android:fillColor="#1A365D"
+        android:pathData="M54,0 A54,54 0 1,0 54,108 A54,54 0 1,0 54,0 Z" />
+
+    <!-- Anillo Elegante Dorado -->
+    <path
+        android:strokeColor="#D4AF37"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M54,12 A42,42 0 1,0 54,96 A42,42 0 1,0 54,12 Z" />
+
+    <!-- Sombrero de Chef / Repostería -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,68 L70,68 L70,74 L38,74 Z M36,64 L72,64 C74,64 75,62 75,60 C75,54 70,52 68,52 C71,48 71,40 64,38 C62,35 57,34 54,36 C51,34 46,35 44,38 C37,40 37,48 40,52 C38,52 33,54 33,60 C33,62 34,64 36,64 Z" />
+
+    <!-- Detalle Central Dorado -->
+    <path
+        android:fillColor="#D4AF37"
+        android:pathData="M54,44 C51,49 51,56 54,60 C57,56 57,49 54,44 Z" />
+</vector>
