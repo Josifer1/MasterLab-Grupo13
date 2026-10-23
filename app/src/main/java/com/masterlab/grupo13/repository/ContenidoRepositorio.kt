@@ -5,7 +5,8 @@ import com.masterlab.grupo13.model.CategoriaContenido
 
 //Simula de donde vieen los datos, solo afecto de pruebas mas adelante se debe modificar con Room
 object ContenidoRepositorio{
-    fun listOfert(): List <Contenido> {
+
+    fun obtenerContenidos(): List <Contenido> {
         return listOf(
             Contenido(1, "Brownie de chocolate intenso", "Receta simple con cobertura de chocolate semiamargo.", CategoriaContenido.RECETA, "40 min"),
             Contenido(2, "Empanadas de pino al horno", "Masa casera y relleno tradicional, listas para vender.", CategoriaContenido.RECETA, "50 min"),
