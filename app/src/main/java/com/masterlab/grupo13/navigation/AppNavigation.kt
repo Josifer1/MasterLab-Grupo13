@@ -9,6 +9,7 @@ import com.masterlab.grupo13.viewmodel.UsuarioViewModel
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.masterlab.grupo13.ui.screens.PantallaBienvenida
+import com.masterlab.grupo13.ui.screens.PantallaInicio
 
 
 @Composable
@@ -33,7 +34,19 @@ fun AppNavigation(){
             RegistroScreen(controladorNavegacion, viewModelUsuario)
         }
         composable(Pantalla.Resumen.ruta){
-            ResumenScreen(viewModelUsuario)
+            ResumenScreen(
+                viewModelUsuario,
+                alcontiuar = {
+                    controladorNavegacion.navigate(Pantalla.Inicio.ruta) {
+                        // Borra las pantallas anteriores: al volver atrás se sale de la app
+                        popUpTo(Pantalla.Bienvenida.ruta) { inclusive = true }
+                    }
+                }
+            )
         }
+        composable(Pantalla.Inicio.ruta) {
+            PantallaInicio()
+        }
+
     }
 }

@@ -1,7 +1,11 @@
 package com.masterlab.grupo13.ui.screens
 
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -27,3 +31,12 @@ fun ResumenScreen(viewModel: UsuarioViewModel){
         Text("Terminos: ${if (estado.aceptaTerminos) "Aceptados" else "No aceptados"}")
     }
 }
+
+@Composable
+fun ResumenScreen(viewModel: UsuarioViewModel, alcontiuar: () -> Unit){
+    Spacer(modifier = Modifier.heightIn(24.dp))
+    Button(onClick = alcontiuar, modifier = Modifier.fillMaxWidth()) {
+        Text("Ver _Contenido")
+    }
+}
+
